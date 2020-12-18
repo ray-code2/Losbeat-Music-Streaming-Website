@@ -1,0 +1,30 @@
+{
+  "name": "losbeat_music_app",
+  "version": "1.0.0",
+  "description": "Music For Everyone",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ray-code2/losbeat_test.git"
+  },
+  "author": "Raymond",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ray-code2/losbeat_test/issues"
+  },
+  "homepage": "https://github.com/ray-code2/losbeat_test#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.3",
+    "nodemon": "^2.0.6",
+    "validator": "^13.5.2"
+  }
+}

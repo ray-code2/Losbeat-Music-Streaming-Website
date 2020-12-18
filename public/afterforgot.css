@@ -1,0 +1,19 @@
+body{
+    font-family: sans-serif;
+    font-size : 24px;
+    background-color: #2F303A;
+}
+.link{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.link:hover{
+    color:  #d1ce00;
+}
+p {
+    color: white;
+}
+a{
+    color: white;
+}

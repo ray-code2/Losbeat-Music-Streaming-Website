@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="Images/logo.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"/>
+    <link rel="stylesheet" type="text/css" href="fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/e952733f4e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".profile .icon_wrap").click(function(){
+			  $(this).parent().toggleClass("active");
+			  $(".notifications").removeClass("active");
+			});
+
+			$(".notifications .icon_wrap").click(function(){
+			  $(this).parent().toggleClass("active");
+			   $(".profile").removeClass("active");
+			});
+
+			$(".show_all .link").click(function(){
+			  $(".notifications").removeClass("active");
+			  $(".popup").show();
+			});
+
+			$(".close").click(function(){
+			  $(".popup").hide();
+			});
+		});
+	</script>
+
+    <link href="home.css" rel="Stylesheet">
+    <title> Losbeats </title>
+     </head>
+     <body>
+        <header>
+            <div class="nav">
+            <a href="/" class="brand">
+                <img src="Images/logo.png" alt="logo" class="logo"> 
+            Losbeats
+            </a>
+   
+            <br>
+            <h5>Music For Everyone</h5>
+        </div>
+
+            <div class="container">
+                
+                
+              <nav>
+             
+                    <div class="Searchbar">
+
+
+                    <input id="search" onkeyup="testo()" type="text" placeholder="Search for Artists, Songs, Or Podcasts..." >
+			    <ul id="Songs">
+                        <li><a href="#">Liquid Time</a></li>
+                        <li><a href="#">Dynamite</a></li>
+                        <li><a href="#">Invisible beauty</a></li>
+                        <li><a href="#">Just Stay</a></li>
+                        <li><a href="#">Silky Smooth</a></li>
+                        <li><a href="#">Autumn Leaves</a></li>
+                        <li><a href="#">Escaping Time</a></li>
+                        <li><a href="#">Ice Cream (with SELENA GOMEZ)</a></li>
+                        <li><a href="#">Catcher</a></li>
+                        <li><a href="#">In The Blue of Evening</a></li>
+                        <li><a href="#">New Thang</a></li>
+                        <li><a href="#">Good Morning Heartache</a></li>
+                        <li><a href="#">Sea Change</a></li>
+                        <li><a href="#">Friend</a></li>
+                        <li><a href="#">Surrender</a></li>
+                        <li><a href="#">Not For Nothing</a></li>
+                        <li><a href="#">Know Bout Me</a></li>
+                        <li><a href="#">Heather Conan</a></li>
+                        <li><a href="#">Tap In</a></li>
+                        <li><a href="#">New Thang</a></li>
+                        <li><a href="#">Lets Link</a></li>
+                        <li><a href="#">Not to Cry</a></li>
+                        <li><a href="#">Otis Mcmusic</a></li>
+                        <li><a href="#">CYKA BLYAT</a></li>
+                       </ul>
+                   
+                </div>
+
+                
+                <div class="wrapper">
+                    <div class="navbar">
+                        <img src="https://img.icons8.com/fluent-systems-filled/48/e0e0e0/home.png"/>
+                      <div class="navbar_left">
+                        <div class="Home">
+                          <a class="current" href="/homepage">Home</a>
+                        </div>
+                      </div>
+
+                  
+                      <div class="navbar_right">
+                        <div class="notifications">
+                          <div class="notification_dd">
+                              <ul class="notification_ul">
+                                  
+                                      <div class="notify_icon">
+                                          <span class="icon"></span>  
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                          
+                        </div>
+                        <div class="profile">
+                          <div class="icon_wrap">
+                            <img src="Images/profile_pic.png" alt="profile_pic">
+                            <span class="name" id="Pname"></span>
+                            <i class="fas fa-chevron-down"></i>
+                          </div>
+                  
+                          <div class="profile_dd">
+                            <ul class="profile_ul">
+                              <li class="profile_li"><a class="profile" href="#"><span class="picon">
+                                <img src="Images/profile_pic.png" alt="profile_pic">
+                                  </span>Profile</a>
+                              </li>
+                              <li><a class="address" href="#"><span class="picon"><img src="https://img.icons8.com/ios/50/ff8f33/playlist.png"></span>Playlist</a></li>
+                              <li><a class="settings" href="#"><span class="picon"><img src="https://img.icons8.com/ios/50/ff8f33/music-library.png"></span>Library</a></li>
+                              <li><a class="logout" href="/"><span class="picon"><img src="https://img.icons8.com/metro/50/ff8f33/export.png"></span>Logout</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                   
+                  </div>
+              </nav>
+            </div>
+          </header>
+      
+
+          <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <br>
+                    <br>
+                    <h3 name="h3">Top Charts</h3>
+                  
+                </div>
+                <div id="Invisible beauty" class="col-md-3">
+                    <a href="#" class="album-poster" data-switch="0">
+                        
+                        <img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
+            
+                    </a>
+                    <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="0">
+                    <h4 >No CopyRights Music </h4>
+                    <p>Invisible Beauty</p>
+                </div>
+                <div id="Dynamite" class="col-md-3"> 
+                    <a href="#" class="album-poster" data-switch="14">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRWeTpQ9xcYKaJC-nkQ8BtybZJqdZ9L4UwcKQ&usqp=CAU" alt="" >
+                    </a>
+                    <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="14">
+                    <h4>Dynamite</h4>
+                    <p>Bts (반탄스년단)</p>
+                </div>
+                <div id="Liquid Time" class="col-md-3">
+                    <a href="#" class="album-poster" data-switch="2">
+                        <img src="https://images.pexels.com/photos/838696/pexels-photo-838696.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
+                    </a>
+                    <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="2">
+                    <h4>No CopyRights Music</h4>
+                    <p>Liquid Time</p>
+                </div>
+        
+                <div id="Silky Smooth" class="col-md-3">
+                    <a href="#" class="album-poster" data-switch="3">
+                        <img src="https://images.pexels.com/photos/1047442/pexels-photo-1047442.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
+                    </a>
+                    <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="3">
+                    <h4>No CopyRights Music</h4>
+                    <p>Silky Smooth</p>
+                </div>
+                <div id="Just Stay" class="col-md-3">
+                    <a href="#" class="album-poster" data-switch="1">
+                        <img src="https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
+                    </a>
+                    <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="1">
+                    <h4>No CopyRights Music</h4>
+                    <p>Just Stay</p>
+                </div>
+                <div id="Ice Cream (with SELENA GOMEZ)" class="col-md-3">
+                    <a href="#" class="album-poster" data-switch="15">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/d/db/Blackpink_%26_Selena_Gomez_-_Ice_Cream.png" alt="" >
+                    </a>
+                    <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="15">
+                    <h4>Ice Cream (with SELENA GOMEZ)</h4>
+                    <p>BLACKPINK</p>
+                </div>
+        
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <br>
+                        <br>
+                        <h3 name="h3">Focus</h3>
+                        <p class="subtitle" name="h3">Music to help you concentrate.</p>
+                    </div>
+                    <div id="Autumn Leaves" class="col-md-3">
+                        <a href="#" class="album-poster" data-switch="9">
+                            <img src="https://i1.sndcdn.com/artworks-000669138907-0bmgqq-t500x500.jpg" alt="" >
+                        </a>
+                        <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="9">
+                        <h4>Autumn Leaves</h4>
+                        <p>Vensterbank , poky, sea flap-flap</p>
+                    </div>
+                <div id="Escaping Time" class="col-md-3" >
+                    <a href="#" class="album-poster" data-switch="10">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27310678e3a1e1309ec52e193dd" alt="" >
+                    </a>
+                    <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="10">
+                    <h4>Escaping Time</h4>
+                    <p>Benjamin Martin</p>
+                </div>
+                <div id="Catcher" class="col-md-3" >
+                    <a href="#" class="album-poster" data-switch="11">
+                        <img src="https://d34qmkt8w5wll9.cloudfront.net/commercial-releases/cover_art/jpeg/699.jpg" alt="" >
+                    </a>
+                    <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="11">
+                    <h4> Catcher</h4>
+                    <p>Hana Noda</p>
+                </div>
+                <div id="In The Blue of Evening" class="col-md-3" >
+                    <a href="#" class="album-poster" data-switch="12">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273c0e8f9403e1474618e38c78f" alt="" >
+                    </a>
+                    <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="12">
+                    <h4>In The Blue of Evening</h4>
+                    <p>Asi Kaplan Jazz Band</p>
+                </div>
+                <div id="Good Morning Heartache" class="col-md-3" >
+                    <a href="#" class="album-poster" data-switch="13">
+                        <img src="https://i.kfs.io/album/global/70569533,1v1/fit/500x500.jpg" alt="" >
+                    </a>
+                    <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="13">
+                    <h4>Good Morning Heartache</h4>
+                    <p>Sixth Street Quartet</p>
+                </div>
+                <div id="Sea Change" class="col-md-3" >
+                    <a href="#" class="album-poster" data-switch="8">
+                        <img src="https://mtv-intl.mtvnimages.com/uri/mgid:arc:content:mtvasia.com:fe0cbb56-9a52-11ea-9225-70df2f866ace?ep=mtvasia.com&stage=live&format=jpg&quality=0.8" alt="" >
+                    </a>
+                    <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="8">
+                    <h4>Sea Change</h4>
+                    <p>Stephan Moccio</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12" >
+                        <br>
+                        <br>
+                        <h3 name='h3'>Mood</h3>
+                        <p class="subtitle" name="h3">Playlists to match your mood.</p>
+                    </div>
+                    <div name="h3" id="Invisible Beauty" class="col-md-3" >
+                        <a href="javascript:void();" class="album-poster" data-switch="0">
+                            <img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
+                        </a>
+                        <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="0">
+                        <h4>No CopyRights Music </h4>
+                        <p>Invisible Beauty</p>
+                    </div>
+                    <div name="h3" id="Just Stay" class="col-md-3" >
+                        <a href="#" class="album-poster" data-switch="1">
+                            <img src="https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
+                        </a>
+                        <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="1">
+                        <h4>No CopyRights Music</h4>
+                        <p>Just Stay</p>
+                    </div>
+                    <div name="h3" id="Liquid Time" class="col-md-3" >
+                        <a href="#" class="album-poster" data-switch="2">
+                            <img src="https://images.pexels.com/photos/838696/pexels-photo-838696.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
+                        </a>
+                        <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="2">
+                        <h4>No CopyRights Music</h4>
+                        <p>Liquid Time</p>
+                    </div>
+            
+                    <div name="h3" id="Silky Smooth" class="col-md-3" >
+                        <a href="#" class="album-poster" data-switch="3">
+                            <img src="https://images.pexels.com/photos/1047442/pexels-photo-1047442.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
+                        </a>
+                        <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="3">
+                        <h4>No CopyRights Music</h4>
+                        <p>Silky Smooth</p>
+                    </div>
+                    <div id="Friend" class="col-md-3" >
+                        <a href="#" class="album-poster" data-switch="16">
+                            <img src="https://cdns-images.dzcdn.net/images/cover/b54da7b338d2e5e399b183531207ade7/264x264.jpg" alt="" >
+                        </a>
+                        <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="16">
+                        <h4>Friend</h4>
+                        <p>Gracie Abrams</p>
+                    </div>
+                    <div id="Not For Nothing" class="col-md-3" >
+                        <a href="#" class="album-poster" data-switch="4">
+                            <img src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
+                        </a>
+                        <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="4">
+                        <h4>Not For Nothing</h4>
+                        <p>Otis Mcdonald</p>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12" >
+                            <br>
+                            <br>
+                            <h3 name='h3'>Viral Hits</h3>
+                            <p class="subtitle" name='h3'>Viral, trending and taking off</p>
+                        </div>
+                        <div id="Surrender" class="col-md-3" >
+                            <a href="javascript:void();" class="album-poster" data-switch="17">
+                                <img src="https://cdn2.tstatic.net/wow/foto/bank/images/lagu-surrender-yang-dipopulerkan-oleh-natalie-taylor-sering-diputar-di-aplikasi-tiktok.jpg" alt="" >
+                            </a>
+                            <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="17">
+                            <h4>Surrender</h4>
+                            <p>Natalie Taylor</p>
+                        </div>
+                        <div id="Know Bout Me" class="col-md-3" >
+                            <a href="#" class="album-poster" data-switch="18">
+                                <img src="https://s3.amazonaws.com/broadtime_photo/418460159226" alt="" >
+                            </a>
+                            <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="18">
+                            <h4>Know bout me</h4>
+                            <p>Pop Smoke</p>
+                        </div>
+                        <div id="New Thang" class="col-md-3" >
+                            <a href="#" class="album-poster" data-switch="19">
+                                <img src="https://lipstiq.com/wp-content/uploads/2016/06/redfoo.jpg" alt="" >
+                            </a>
+                            <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="19">
+                            <h4>New Thang</h4>
+                            <p>Redfoo</p>
+                        </div>
+                        <div id="Heather Conan" class="col-md-3" >
+                            <a href="#" class="album-poster" data-switch="20">
+                                <img src="https://express-images.franklymedia.com/6616/sites/1149/2020/08/06173435/conangray.png" alt="" >
+                            </a>
+                            <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="20">
+                            <h4>Heather Conan</h4>
+                            <p>Conan Gray</p>
+                        </div>
+                        <div id="Tap In" class="col-md-3" >
+                            <a href="#" class="album-poster" data-switch="21">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTNGF-p_Xp7BgC-I46LkthBK5F6_ijnoPP8Xg&usqp=CAU" alt="" >
+                            </a>
+                            <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="21">
+                            <h4>Tap In</h4>
+                            <p>Saweetie</p>
+                        </div>
+                        <div id="Lets Link" class="col-md-3" >
+                            <a href="#" class="album-poster" data-switch="22">
+                                <img src="https://i.ytimg.com/vi/EIRTnuwUPBw/mqdefault.jpg" alt="" >
+                            </a>
+                            <img class="Buttonhover"src="https://img.icons8.com/ios-filled/50/E67E22/play-button-circled.png" data-switch="22">
+                            <h4>Lets Link</h4>
+                            <p>WhoHeem</p>
+                        </div>
+
+            
+            <div class="row">
+                <div class="col-md-12" >
+                    <h3>New Releases</h3>
+                </div>
+                <div class="col-md-2">
+                    <a href="#" class="album">
+                        <img src="https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
+                    </a>
+                    <h4>Tatiana</h4>
+                    <p>Still Love YOU</p>
+                </div>
+                <div class="col-md-2" >
+                    <a href="#" class="album">
+                        <img src="https://images.pexels.com/photos/838702/pexels-photo-838702.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                    </a>
+                    <h4>Tatiana</h4>
+                    <p>BREAK!</p>
+                </div>
+                <div class="col-md-2" >
+                    <a href="#" class="album">
+                        <img src="https://images.pexels.com/photos/894156/pexels-photo-894156.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
+                    </a>
+                    <h4>Lil Vibex</h4>
+                    <p>Outspace</p>
+                </div>
+                
+                <div class="col-md-2">
+                    <a href="#" class="album">
+                        <img src="https://images.pexels.com/photos/2118046/pexels-photo-2118046.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
+                    </a>
+                    <h4>Lyana</h4>
+                    <p>Bella Ciao</p>
+                </div>
+                <div class="col-md-2" >
+                    <a href="#" class="album">
+                        <img src="https://images.pexels.com/photos/1735240/pexels-photo-1735240.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
+                    </a>
+                    <h4>Letty</h4>
+                    <p>Up and Down</p>
+                </div>
+                <div class="col-md-2" >
+                    <a href="#" class="album">
+                        <img src="https://images.pexels.com/photos/2272854/pexels-photo-2272854.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
+                    </a>
+                    <h4>Bebi-Z</h4>
+                    <p>Peace!</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" >
+                <h3>Top Hits</h3>
+            </div>
+            <div class="col-md-2" >
+                <a href="#" class="album">
+                    <img src="https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
+                </a>
+                <h4>Tatiana</h4>
+                <p>Still Love YOU</p>
+            </div>
+            <div class="col-md-2" >
+                <a href="#" class="album">
+                    <img src="https://images.pexels.com/photos/838702/pexels-photo-838702.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" style="width: 100%;min-height: 250px;">
+                </a>
+                <h4>Tatiana</h4>
+                <p>BREAK!</p>
+            </div>
+            <div class="col-md-2" >
+                <a href="#" class="album">
+                    <img src="https://images.pexels.com/photos/894156/pexels-photo-894156.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" style="width: 100%;min-height: 250px;">
+                </a>
+                <h4>Lil Vibex</h4>
+                <p>Outspace</p>
+            </div>
+            
+            <div class="col-md-2" >
+                <a href="#" class="album">
+                    <img src="https://images.pexels.com/photos/2118046/pexels-photo-2118046.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" style="width: 100%;min-height: 250px;">
+                </a>
+                <h4>Lyana</h4>
+                <p>Bella Ciao</p>
+            </div>
+            <div class="col-md-2" >
+                <a href="#" class="album">
+                    <img src="https://images.pexels.com/photos/1735240/pexels-photo-1735240.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" style="width: 100%;min-height: 250px;">
+                </a>
+                <h4>Letty</h4>
+                <p>Up and Down</p>
+            </div>
+            <div class="col-md-2" >
+                <a href="#" class="album">
+                    <img src="https://images.pexels.com/photos/2272854/pexels-photo-2272854.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" style="width: 100%;min-height: 250px;">
+                </a>
+                <h4>Bebi-Z</h4>
+                <p>Peace!</p>
+            </div>
+        </div>
+    </div>
+    
+    
+        <br>
+        <br>
+        <br>
+            <div id="aplayer"></div>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>	
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+            <script>
+                $(".album-poster").on('click', function(e){
+                    var dataSwitchId = $(this).attr('data-switch');
+                    ap.list.switch(dataSwitchId); 
+                    ap.play();
+                    $("#aplayer").addClass('showPlayer');
+                });
+                $(".Buttonhover").on('click', function(e){
+                    var dataSwitchId = $(this).attr('data-switch');
+                    ap.list.switch(dataSwitchId); 
+                    ap.play();
+                    $("#aplayer").addClass('showPlayer');
+                });
+                const ap = new APlayer({
+                    container: document.getElementById('aplayer'),
+                    listFolded: true,
+                    listMaxHeight: 120,
+
+                    audio: [
+                    {
+                        name: 'Invisible Beauty ',
+                        url: 'source/invisible_beauty.mp3',
+                        artist: 'No CopyRights Music',
+                        cover: 'https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+                    },
+                    {
+                        name: 'Just Stay ',
+                        url: 'source/just_stay.mp3', 
+                        artist: 'No CopyRights Music',
+                        cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', // COVER IMAGE
+                    },
+                    {
+                        name: 'Liquid Time ',
+                        url: 'source/liquid_time.mp3',
+                        artist: 'No CopyRights Music',
+                        cover: 'https://images.pexels.com/photos/838696/pexels-photo-838696.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+                    },
+                    {
+                        name: 'Silky Smooth',
+                        url: 'source/silky_smooth.mp3',
+                        artist: 'No CopyRights Music',
+                        cover: 'https://images.pexels.com/photos/1047442/pexels-photo-1047442.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+                    },
+                    {
+                        name: 'Not For Nothing ',  
+                        url: 'source/Not For Nothing - Otis McDonald (No Copyright Music).mp3', 
+                        artist: 'Otis Mcdonald',
+                        cover: 'https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+                    },
+                    {
+                        name: 'Otis Mcmusic',
+                        url: 'source/Otis McMusic - Otis McDonald (No Copyright Music).mp3',
+                        artist:  'Otis Mcdonald',
+                        cover: 'https://images.pexels.com/photos/210922/pexels-photo-210922.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+                    },
+                    {
+                        name: 'Not to Cry',
+                        url: 'source/Not Too Cray - Huma-Huma (No Copyright Music).mp3',
+                        artist: 'Huma - Huma',
+                        cover: 'https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+                    },
+                    {
+                        name: 'CYKA BLYAT',
+                        url: 'source/CK.mp3',
+                        artist: 'DJ Blyatman & Russian Village Boys',
+                        cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+                    },
+                    {
+                        name: 'Sea Change',
+                        url: 'source/S.mp3',
+                        artist: 'Stephan Mocio',
+                        cover: 'https://mtv-intl.mtvnimages.com/uri/mgid:arc:content:mtvasia.com:fe0cbb56-9a52-11ea-9225-70df2f866ace?ep=mtvasia.com&stage=live&format=jpg&quality=0.8',
+                    },
+                    {
+                        name:'Autumn Leaves',
+                        url: 'source/A.mp3',
+                        artist: 'Vensterbank , poky, sea flap-flap',
+                        cover: 'https://i1.sndcdn.com/artworks-000669138907-0bmgqq-t500x500.jpg',
+                    },
+                    {
+                        name:'Escaping Time',
+                        url: 'source/Escaping Time.mp3',
+                        artist: 'Benjamin Martin',
+                        cover: 'https://i.scdn.co/image/ab67616d0000b27310678e3a1e1309ec52e193dd',
+                    },
+                    {
+                        name:'Catcher',
+                        url: 'source/Hn.mp3',
+                        artist: 'Hara Noda',
+                        cover: 'https://d34qmkt8w5wll9.cloudfront.net/commercial-releases/cover_art/jpeg/699.jpg',
+                    },
+                    {
+                        name:'In The Blue Of Evening',
+                        url: 'source/In the Blue of Evening.mp3',
+                        artist: 'Asi Kaplan Jazz Band',
+                        cover: 'https://i.scdn.co/image/ab67616d0000b273c0e8f9403e1474618e38c78f',
+                    },
+                    {
+                        name:'Good Morning Heartache',
+                        url: 'source/Gm.mp3',
+                        artist: 'Sixth Street Quartet',
+                        cover: 'https://i.kfs.io/album/global/70569533,1v1/fit/500x500.jpg',
+                    },
+                    {
+                        name:'Dynamite',
+                        url: 'source/Bts.mp3',
+                        artist: 'BTS (반탄스년단)',
+                        cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRWeTpQ9xcYKaJC-nkQ8BtybZJqdZ9L4UwcKQ&usqp=CAU',
+                    },
+                    {
+                        name:'Ice Cream',
+                        url: 'source/blackpink.mp3',
+                        artist: 'BLACKPINK Feat Selena Gomez',
+                        cover: 'https://upload.wikimedia.org/wikipedia/en/d/db/Blackpink_%26_Selena_Gomez_-_Ice_Cream.png',
+                    },
+                    {
+                        name:'Friend',
+                        url: 'source/Friend.mp3',
+                        artist: 'Gracie Abrams',
+                        cover: 'https://cdns-images.dzcdn.net/images/cover/b54da7b338d2e5e399b183531207ade7/264x264.jpg',
+                    },
+                    {
+                        name:'Surrender',
+                        url: 'source/surrender.mp3',
+                        artist: 'Natalie Taylor',
+                        cover: 'https://cdn2.tstatic.net/wow/foto/bank/images/lagu-surrender-yang-dipopulerkan-oleh-natalie-taylor-sering-diputar-di-aplikasi-tiktok.jpg',
+                    },
+                    {
+                        name:'Know bout me',
+                        url: 'source/Know bout me.mp3',
+                        artist: 'Pop Smoke',
+                        cover: 'https://s3.amazonaws.com/broadtime_photo/418460159226',
+                    },
+                    {
+                        name:'New Thang',
+                        url: 'source/New Thang.mp3',
+                        artist: 'Redfoo',
+                        cover: 'https://lipstiq.com/wp-content/uploads/2016/06/redfoo.jpg',
+                    },
+                    {
+                        name:'Heather Conan',
+                        url: 'source/Canon Gray.mp3',
+                        artist: 'Canon Gray',
+                        cover: 'https://express-images.franklymedia.com/6616/sites/1149/2020/08/06173435/conangray.png',
+                    },
+                    {
+                        name:'Tap In',
+                        url: 'source/Tap In.mp3',
+                        artist: 'Saweetie',
+                        cover: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTNGF-p_Xp7BgC-I46LkthBK5F6_ijnoPP8Xg&usqp=CAU',
+                    },
+                    {
+                        name:'Lets Link',
+                        url: 'source/lets link.mp3',
+                        artist: 'WhoHeem',
+                        cover: 'https://i.ytimg.com/vi/EIRTnuwUPBw/mqdefault.jpg',
+                    },
+                    ]
+                });
+            </script>
+          
+
+          
+            </div>
+		       </div>
+            </div>
+
+            </div>
+         </div>
+   </div>
+            </div>
+
+            </div>
+            </div>
+           </div>
+            </div>
+
+            </div>
+
+            <div class="Copyright">
+                <span> Losbeats created by Kelompok 12 WebProgramming-A <i class="far fa-copyright"> 2020</i></span>
+                <ul class="Footer-link">
+                    <li><a href="https://github.com/Kelompok12-WebprogrammingA/Music-app-project">About Us</a></li>
+                    <li><a href="Losbeat-terms-conditions.pdf">Terms And Conditions</a></li>
+                  </ul>
+
+         <script>
+              document.getElementById("Pname").innerHTML = localStorage.getItem("TextValues");
+            
+              
+        </script>
+        <script>
+           function SongSearch() {
+    // Declare variables
+    var input, filter, ul, li, a, i, b, c, d, e;
+    input = document.getElementById('search');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("Songs");
+    li = ul.getElementsByTagName('li');
+    d=document.getElementsByName("h3");
+    e=document.getElementById('aplayer');
+    if(input.value.length == 0){
+        ul.style.display = "none";
+    }else{
+        ul.style.display = "block";
+    }
+    if(input.value.length != 0){
+        for(i=0;i<d.length;i++){
+        d[i].style.display="none";
+        }
+        e.style.display="none";
+    }else{
+        for(i=0;i<d.length;i++){
+        d[i].style.display="block";
+        }
+    }
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) == 0) {
+            li[i].style.display = "block";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+function SongDeleto()   {
+    var input, filter, ul, li, a, i, b, c;
+    input = document.getElementById('search');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("Songs");
+    li = ul.getElementsByTagName('li');
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        c = a.innerHTML;
+        b = document.getElementById(c);
+        if (a.innerHTML.toUpperCase().indexOf(filter) != 0) {
+            b.style.display = "none";
+        }else {
+            b.style.display = "block";
+        }
+    }
+}
+function check(){
+    var  b;
+    b = document.getElementById('aplayer')
+        b.style.display="block";   
+}
+var x=document.getElementsByClassName("Buttonhover");
+for(var i=0;i<document.getElementsByClassName("Buttonhover").length;i++){
+    x[i].addEventListener("click", check);
+};
+            </script>
+<script>
+
+  function testo(){
+                SongSearch();
+                SongDeleto();
+            }
+</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>	
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+</body>
+</html>
